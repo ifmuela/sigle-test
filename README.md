@@ -17,15 +17,16 @@ As a description we have a focus on services. Models with their migrations, prot
 
 ## Technology
 I found it interesting to try `Laravel 11` and see the new settings to try and the Docker system that Sail provides.
-We chose Santum for the access level instead of Passport
-Maatwebsite for Excel functionalities
+We chose `Santum` for the access level instead of `Passport`.
+
+`Maatwebsite` for Excel functionalities
 
 ## Recommendations
 
 The use of `Resources`
 `Testing`
 `Rule request`
-and finally the visual part (recommending `Vue` or interesting to see the new integration of `Laravel 11` with `Next.js`)
+and finally the `Front-end` (recommending `Vue` or interesting to see the new integration of `Laravel 11` with `Next.js`)
 
 ## News 
 
