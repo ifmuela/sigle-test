@@ -8,6 +8,8 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Validator;
 
 use App\Http\Services\Tasks\TaskService;
+use App\Exports\TaskExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class TaskController extends Controller
 {
@@ -91,5 +93,16 @@ class TaskController extends Controller
         return response()->json([
             'data' => $tasks,
         ], 200);
+    }
+
+    public function exportExcel(Request $request)
+    {
+        try {
+            return Excel::download(new TaskExport($request, $this->TaskService), 'tasks.xlsx', \Maatwebsite\Excel\Excel::XLSX, [
+                'Content-Type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            ]);
+        } catch (Exception $e) {
+            throw $e;
+        }
     }
 }

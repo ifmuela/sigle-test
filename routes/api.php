@@ -41,5 +41,6 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::post('/create-task', 'App\Http\Controllers\TaskController@createTask');
         Route::delete('/{id}', 'App\Http\Controllers\TaskController@deleteTask');
         Route::post('/filter/search', 'App\Http\Controllers\TaskController@filterTask');
+        Route::get('/export/excel', 'App\Http\Controllers\TaskController@exportExcel');
     });
 });
