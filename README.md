@@ -23,10 +23,10 @@ We chose `Santum` for the access level instead of `Passport`.
 
 ## Recommendations
 
-The use of `Resources`
-`Testing`
-`Rule request`
-and finally the `Front-end` (recommending `Vue` or interesting to see the new integration of `Laravel 11` with `Next.js`)
+* The use of `Resources`
+* `Testing`
+* `Rule request`
+* Finally the `Front-end` (recommending `Vue` or interesting to see the new integration of `Laravel 11` with `Next.js`)
 
 ## News 
 
